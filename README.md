@@ -181,3 +181,4 @@ npm install --global @epaperjs/cli @epaperjs/rpi-7in5-v2
 It's easy to extend ePaper.js to support additional Waveshare devices. Displays from other manufacturers should be possible to support as well, as long as there is a C / C++ driver available.
 
 If you would like to request support for another display, please open an issue with the title 'Add support for <Device Make \ Model>'. If you're a developer and have extended support yourself, put up a pull request!
+git clone 
