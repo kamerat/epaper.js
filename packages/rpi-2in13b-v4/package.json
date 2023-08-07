@@ -22,7 +22,7 @@
     "scripts": {
         "build": "node-gyp rebuild",
         "clean": "node-gyp clean",
-        "build:clean": "pnpm clean && pnpm build"
+        "build:clean": "npm clean && npm build"
     },
     "dependencies": {
         "@epaperjs/core": "workspace:^",
