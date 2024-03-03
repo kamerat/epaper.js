@@ -24,9 +24,7 @@ Napi::Value Display(const Napi::CallbackInfo &info)
     Napi::Env env = info.Env();
     Napi::Buffer<uint8_t> blackBuffer = info[0].As<Napi::Buffer<uint8_t>>();
     Napi::Buffer<uint8_t> colorBuffer = info[1].As<Napi::Buffer<uint8_t>>();
-    EPD_2in13_V4_Display(
-        reinterpret_cast<uint8_t *>(blackBuffer.Data()),
-        reinterpret_cast<uint8_t *>(colorBuffer.Data()));
+    EPD_2in13_V4_Display(reinterpret_cast<uint8_t *>(blackBuffer.Data()));
     return env.Undefined();
 }
 
