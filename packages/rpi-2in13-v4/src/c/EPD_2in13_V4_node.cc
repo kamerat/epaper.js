@@ -33,7 +33,7 @@ Napi::Value Display(const Napi::CallbackInfo &info)
 Napi::Value Clear(const Napi::CallbackInfo &info)
 {
     Napi::Env env = info.Env();
-    EPD_2IN13_V4_Clear();
+    EPD_2in13_V4_Clear();
     return env.Undefined();
 }
 
