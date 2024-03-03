@@ -15,7 +15,7 @@ Napi::Number DEV_Init(const Napi::CallbackInfo &info)
 Napi::Value Init(const Napi::CallbackInfo &info)
 {
     Napi::Env env = info.Env();
-    EPD_2IN13_V4_Init();
+    EPD_2in13_V4_Init();
     return env.Undefined();
 }
 
@@ -24,7 +24,7 @@ Napi::Value Display(const Napi::CallbackInfo &info)
     Napi::Env env = info.Env();
     Napi::Buffer<uint8_t> blackBuffer = info[0].As<Napi::Buffer<uint8_t>>();
     Napi::Buffer<uint8_t> colorBuffer = info[1].As<Napi::Buffer<uint8_t>>();
-    EPD_2IN13_V4_Display(
+    EPD_2in13_V4_Display(
         reinterpret_cast<uint8_t *>(blackBuffer.Data()),
         reinterpret_cast<uint8_t *>(colorBuffer.Data()));
     return env.Undefined();
@@ -40,7 +40,7 @@ Napi::Value Clear(const Napi::CallbackInfo &info)
 Napi::Value Sleep(const Napi::CallbackInfo &info)
 {
     Napi::Env env = info.Env();
-    EPD_2IN13_V4_Sleep();
+    EPD_2in13_V4_Sleep();
     return env.Undefined();
 }
 
