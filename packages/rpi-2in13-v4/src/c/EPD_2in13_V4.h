@@ -1,16 +1,13 @@
 /*****************************************************************************
-* | File      	:	Debug.h
+* | File      	:   EPD_2Iin13_V4.h
 * | Author      :   Waveshare team
-* | Function    :	debug with printf
+* | Function    :   2.13inch e-paper V4
 * | Info        :
-*   Image scanning
-*      Please use progressive scanning to generate images or fonts
 *----------------
-* |	This version:   V2.0
-* | Date        :   2018-10-30
-* | Info        :   
-*   1.USE_DEBUG -> DEBUG, If you need to see the debug information, 
-*    clear the execution: make DEBUG=-DDEBUG
+* |	This version:   V1.1
+* | Date        :   2021-10-30
+* | Info        :
+* -----------------------------------------------------------------------------
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documnetation files (the "Software"), to deal
@@ -30,18 +27,27 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 #
-
 ******************************************************************************/
-#ifndef __DEBUG_H
-#define __DEBUG_H
+#ifndef __EPD_2in13_V4_H_
+#define __EPD_2in13_V4_H_
 
-#include <stdio.h>
+#include "DEV_Config.h"
 
-#if DEBUG
-	#define Debug(__info,...) printf("Debug: " __info,##__VA_ARGS__)
-#else
-	#define Debug(__info,...)  
+
+// Display resolution
+#define EPD_2in13_V4_WIDTH       122
+#define EPD_2in13_V4_HEIGHT      250
+
+void EPD_2in13_V4_Init(void);
+void EPD_2in13_V4_Init_Fast(void);
+void EPD_2in13_V4_Init_GUI(void);
+void EPD_2in13_V4_Clear(void);
+void EPD_2in13_V4_Clear_Black(void);
+void EPD_2in13_V4_Display(UBYTE *Image);
+void EPD_2in13_V4_Display_Fast(UBYTE *Image);
+void EPD_2in13_V4_Display_Base(UBYTE *Image);
+void EPD_2in13_V4_Display_Partial(UBYTE *Image);
+void EPD_2in13_V4_Sleep(void);
+
+
 #endif
-
-#endif
-

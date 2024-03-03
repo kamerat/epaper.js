@@ -1,5 +1,5 @@
 {
-    "name": "@epaperjs/rpi-2in13b-v4",
+    "name": "@epaperjs/rpi-2in13-v4",
     "version": "2.0.5",
     "private": false,
     "description": "ePaper.js support for Waveshare 2.13\" B-V4 display",
@@ -9,7 +9,7 @@
         "url": "https://github.com/kriptontr/epaper.js/issues"
     },
     "license": "MIT",
-    "main": "lib/rpi2In13BV4.js",
+    "main": "lib/rpi2In13V4.js",
     "files": [
         "lib",
         "src/c",
@@ -22,7 +22,7 @@
     "scripts": {
         "build": "node-gyp rebuild",
         "clean": "node-gyp clean",
-        "build:clean": "npm clean && npm build"
+        "build:clean": "pnpm clean && pnpm build"
     },
     "dependencies": {
         "@epaperjs/core": "workspace:^",

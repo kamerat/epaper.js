@@ -36,9 +36,9 @@ importers:
       '@epaperjs/rpi-2in13-v2':
         specifier: workspace:^
         version: link:../rpi-2in13-v2
-      '@epaperjs/rpi-2in13b-v4':
+      '@epaperjs/rpi-2in13-v4':
         specifier: workspace:^
-        version: link:../rpi-2in13b-v4
+        version: link:../rpi-2in13-v4
       '@epaperjs/rpi-2in7':
         specifier: workspace:^
         version: link:../rpi-2in7
@@ -118,7 +118,7 @@ importers:
         specifier: ^1.5.1
         version: 1.5.1
 
-  packages/rpi-2in13b-v4:
+  packages/rpi-2in13-v4:
     dependencies:
       '@epaperjs/core':
         specifier: workspace:^
@@ -587,7 +587,7 @@ packages:
     dev: true
 
   /ansi-regex@3.0.0:
-    resolution: {integrity: sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=}
+    resolution: {integrity: sha512-wFUFA5bg5dviipbQQ32yOQhl6gcJaJXiHE7dvR8VYPG97+J/GNC5FKGepKdEDUFeXRzDxPF1X/Btc8L+v7oqIQ==}
     engines: {node: '>=4'}
     dev: true
 
@@ -848,7 +848,7 @@ packages:
     dev: false
 
   /console-control-strings@1.1.0:
-    resolution: {integrity: sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=}
+    resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
     dev: false
 
   /cross-fetch@3.1.5:
@@ -921,7 +921,7 @@ packages:
     dev: true
 
   /delegates@1.0.0:
-    resolution: {integrity: sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=}
+    resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
     dev: false
 
   /depd@1.1.2:
@@ -1217,7 +1217,7 @@ packages:
     dev: true
 
   /has-unicode@2.0.1:
-    resolution: {integrity: sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=}
+    resolution: {integrity: sha512-8Rf9Y83NBReMnx0gFzA8JImQACstCYWUplepDa9xprwwtmgEZUF0h/i5xSA625zB/I37EtrswSST6OXxwaaIJQ==}
     dev: false
 
   /has@1.0.3:
@@ -1358,7 +1358,7 @@ packages:
     dev: true
 
   /is-lambda@1.0.1:
-    resolution: {integrity: sha1-PZh3iZ5qU+/AFgUEzeFfgubwYdU=}
+    resolution: {integrity: sha512-z7CMFGNrENq5iFB9Bqo64Xk6Y9sg+epq1myIcdHaGnbMTYOxvzsEtdYqQUylB7LxfkvgrrjP32T6Ywciio9UIQ==}
     dev: false
 
   /is-number@7.0.0:
@@ -1389,7 +1389,7 @@ packages:
     dev: true
 
   /isexe@2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -2034,7 +2034,7 @@ packages:
     dev: false
 
   /set-blocking@2.0.0:
-    resolution: {integrity: sha1-BF+XgtARrppoA93TgrJDkrPYkPc=}
+    resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
   /shebang-command@1.2.0:
     resolution: {integrity: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=}
@@ -2161,7 +2161,7 @@ packages:
     dev: false
 
   /strip-ansi@4.0.0:
-    resolution: {integrity: sha1-qEeQIusaw2iocTibY1JixQXuNo8=}
+    resolution: {integrity: sha512-4XaJ2zQdCzROZDivEVIDPkcQn8LMFSa8kj8Gxb/Lnwzv9A8VctNZ+lfivC/sV3ivW8ElJTERXZoPBRrZKkNKow==}
     engines: {node: '>=4'}
     dependencies:
       ansi-regex: 3.0.0

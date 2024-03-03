@@ -27,7 +27,7 @@
             "path": "packages/rpi-3in7"
         },
         {
-            "path": "packages/rpi-2in13b-v4"
+            "path": "packages/rpi-2in13-v4"
         }
     ]
 }
