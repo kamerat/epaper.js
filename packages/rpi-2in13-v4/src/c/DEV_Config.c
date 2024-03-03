@@ -30,10 +30,8 @@
 #include "DEV_Config.h"
 #include "RPI_gpiod.h"
 
-#if USE_LGPIO_LIB
 int GPIO_Handle;
 int SPI_Handle;
-#endif
 
 /**
  * GPIO
